@@ -1,10 +1,5 @@
 <b>Meat Stick </b> <p>
-Authors <p>
-Puja Sodha
-
-Christina Wu
-
-Javier Leon
+Authors: Javier Leon, Puja Sodha, Christina Wu
 
 <b>Purpose</b> <p>
 Creating a web page to sell the Meat Sick Product.
