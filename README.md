@@ -1,4 +1,4 @@
-Meat Stick Web Page
+Meat Stick 
 Authors
 Puja Sodha
 
