@@ -2,7 +2,7 @@
 Authors: Javier Leon, Puja Sodha, Christina Wu
 
 <b>Purpose</b> <p>
-Creating a website to sell The MeatSick Product.
+Creating a website to sell the product The MeatSick.
 
 <b>About the Product</b> <p>
 【TRUE Wireless】No wires! The only TRUE Wireless Smart Meat Thermometer on Amazon.com. Insert The MeatStick into your meat and get your cook on. You don't need to worry about The MeatStick burning out.

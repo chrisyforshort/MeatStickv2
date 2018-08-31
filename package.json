@@ -1,5 +1,5 @@
 {
-  "name": "LetsPrep",
+  "name": "MeatStickv2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pujasodha/LetsPrep.git"
+    "url": "git+https://github.com/pujasodha/MeatStickv2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pujasodha/LetsPrep/issues"
+    "url": "https://github.com/pujasodha/MeatStickv2/issues"
   },
-  "homepage": "https://github.com/pujasodha/LetsPrep#readme",
+  "homepage": "https://github.com/pujasodha/MeatStickv2#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
