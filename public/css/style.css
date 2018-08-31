@@ -1,532 +1,817 @@
 @import url('./materialize.min.css');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-.navHamburger {
-  color: white;
-  position: sticky;
-  z-index: 1;
-  left: 3%;
-  top: 3%;
+
+@font-face {
+  font-family: "myfont";
+  src: url("../../Images/fonts/NexaLight.otf")
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 90px;
-  color: rgb(252, 238, 229);
+@font-face {
+  font-family: "myfont2";
+  src: url("../../Images/fonts/NexaBold.otf")
 }
 
-#copyright {
-  font-weight: bold;
-  padding-top: 35px;
-  margin-top: 0px;
+/* Navbar CSS */
+nav {
+  background-color: #282828;
+  height: 50px;
+  background-size: contain;
+  letter-spacing: 1px;
 }
 
-#homeSection {
-  margin-bottom: 0px;
-  height: 906px;
+a {
+  text-decoration: none;
 }
 
-#tableTopp {
-  width: 100%;
-  height: 975px;
-  position: absolute;
-  z-index: 0;
-  margin-bottom: 0px;
-  top: 0px;
+.navbarlist {
+  left: 23%;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: -8px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 
-#mainTitle {
-  font-family: 'Pacifico', cursive;
-  position: absolute;
-  top: 24%;
-  color: rgb(252, 238, 229);
-  font-size: 260px;
-  text-shadow: -6px 0 #64b5f6, 0 6px #64b5f6, 6px 0 #64b5f6, 0 -6px #64b5f6;
-  font-weight: bold;
+#logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+  left: 22%;
+  margin-top: 5px;
+  position: relative;
 }
 
-.modal-trigger {
-  left: 45%;
-  top: 71.5%;
-  position: absolute;
-  height: 70px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 15px;
-  font-size: 30px;
-  color: rgb(252, 238, 229);
-  padding-top: 17px;
-  font-weight: bold;
+#bag {
+  width: 35px;
+  height: 35px;
+  left: 25%;
+  margin-top: 6px; 
+  position: relative;
 }
 
-/* How Section */
-
-#howSection {
-  top: 1000px;
+.navText {
+  margin-left: 55px;
+  margin-right: 45px;
+  color: #F8F8F8;
 }
 
-.title {
-  margin-top: 0px;
-  font-family: 'Amatic SC', cursive;
-  padding-top: 100px;
-  color: rgb(252, 238, 229);
-  font-weight: 900;
-  font-size: 150px;
-  border-bottom: solid 7px rgb(252, 238, 229);
-}
-
-#howTitle {
-  width: 800px;
-  margin-top: 110px;
-}
-
-.howPics {
-  width: 200px;
-  height: 200px;
-}
-
-.howDivs {
-  margin-bottom: 30px;
-}
-
-.howText {
-  position: absolute;
-  font-size: 40px;
-  color: rgb(252, 238, 229);
-}
-
-#howText1 {
-  top: 1350px;
-  margin-left: 250px;
-}
-
-#howText2 {
-  left: 350px;
-  top: 1575px
-}
-
-#howText3 {
-  margin-left: 50px;
-  top: 1795px;
-}
-
-#howText4 {
-  top: 1840px;
-  margin-left: 210px;
-}
-
-#howText5 {
-  left: 450px;
-  top: 2025px;
-}
-
-#howText6 {
-  left: 600px;
-  top: 2070px;
-}
-
-.row {
-  margin-bottom: 0px;
-}
-
-#lastHowDiv {
-  margin-bottom: 120px;
-}
-
-/* Why Section */
-
-.whySection {
-  top: 1600px;
-  background-color: rgb(252, 238, 229);
-  height: 1000px;
-  margin-bottom: 0px;
-}
-
-#whyTitle {
-  color: black;
-  border-bottom: solid 7px black;
-  width: 800px;
-  margin-top: 110px;
-}
-
-.whyPara {
-  margin-bottom: 40px;
-  width: 400px;
-  margin-left: 200px;
-}
-
-.whyHeaders {
-  font-weight: bold;
-}
-
-#indexFooter {
-  margin-top: 0px;
-}
-
-/* User HTML */
-
-/* Calendar */
-
-.calendarDiv {
-  width: 50%;
-  font-family: 'Kanit', sans-serif;
-  height: 500px;
-  margin-bottom: 100px;
-}
-
-.calendar-base {
-  width: 900px;
-  height: 500px;
-  border-radius: 20px;
+/* SubNavBar CSS */
+.subNav {
   background-color: white;
-  position: relative;
-  z-index: -1;
-  color: black;
+  border-bottom:  solid .5px rgb(204, 204, 204);
 }
 
-.year {
-  color: #E8E8E8;
-  font-size: 30px;
-  float: right;
+.subNavText {
+  color: black;
   position: relative;
-  right: 75px;
-  top: 20px;
+  font-size: 13px;
+}
+
+.mainSubNav {
   font-weight: bold;
 }
 
-.triangle-left {
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-right: 10px solid #E8E8E8;
-  border-bottom: 5px solid transparent;
-  float: right;
-  position: relative;
-  right: 90px;
-  top: 36px;
+#wifiBridgeNav {
+  left: -360%;
 }
 
-.triangle-right {
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-left: 10px solid #E8E8E8;
-  border-bottom: 5px solid transparent;
-  float: right;
-  position: relative;
-  left: 20px;
-  top: 36px;
+#meatStickNav {
+  left: -300%;
 }
 
-.triangle-left:hover {
-  border-right: 10px solid#64b5f6;
+#TheBBQSet{
+  left: -290%;
 }
 
-.triangle-right:hover {
-  border-left: 10px solid#64b5f6;
+#overview {
+  margin-left: 100px;
 }
 
-.month-color {
-  color: #64b5f6;
+#specs {
+  margin-left: 20px;
 }
 
-.month-hover:hover {
-  color: #64b5f6 !important;
+.subNavList {
+  margin-left: 0;
 }
 
-.months {
-  color: #AAAAAA;
-  position: relative;
-  left: 350px;
-  top: 90px;
-  word-spacing: 10px;
+/* Footer CSS */
+#footerDiv {
+  background-color: rgb(241, 241, 241);
+  height: 270px;
+  margin-top: -25px;
+  margin-bottom: 0px;
 }
 
-.month-line {
-  border-color: #E8E8E8;
-  position: relative;
-  top: 85px;
-  width: 57%;
-  left: 178px;
+#disclaimerDiv {
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: solid .5px rgb(204, 204, 204);
+  height: 40px;
+  color: rgb(170, 170, 170);
+  font-size: 11px;
+  padding-left: 0px;
 }
 
-.days {
-  color: #AAAAAA;
-  position: relative;
+#copyRightDiv {
+  color: rgb(138, 138, 138);
+  display: inline;
+  border-top:  solid .5px rgb(204, 204, 204);
+  padding-top: 2px;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#copyrightLine {
+  width:400px;
+  margin: 0px;
+  margin-right: 210px;
+  font-size: 12px;
+}
+
+.linkItem {
+  color: rgb(138, 138, 138);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.listItem {
+  width: 225px;
+  left: 0px;
+}
+
+.policyList {
+  color: rgb(114, 114, 114);
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 15px;
+  border-right:   solid 1px rgb(204, 204, 204);
+  padding-right: 15px;
+}
+
+#lastPolicyList {
+  border-right: none;
+}
+
+h3 {
+  color: rgb(114, 114, 114);
   font-size: 18px;
-  left: 355px;
-  top: 80px;
-  word-spacing: 35px;
+  margin-top: 15px;
+}
+
+.footerRow {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.list {
+  text-align: left;
+  padding-left: 0px;
+}
+
+#moreCol {
+  margin-left: 25px;
+}
+
+/* MeatStick Product Full Image CSS */
+.fullImageDiv {
+  height: 800px;
+  width: 100%;
+  background-color: #fafafa;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center; 
+  overflow: hidden;
+}
+
+.fullImagePic {
+  height: 300px;
+  width: 1000px;
+  margin-top: 150px;
+  background-color: #fafafa;
+}
+
+.description {
+  color: black;
+  font-family: "myfont";
+  position: absolute;
+  top: 315px;
+  left: 700px;
+  font-size: 40px;
+}
+
+#title {
+  width: 900px;
+  height: 230px;
+  position: absolute;
+  top: 180px;
+}
+
+/* Wifi Bridge Full Image CSS */
+#fullImageDiv2 {
+  margin-top: 15px;
+}
+
+.fullImagePic2 {
+  height: 900px;
+  width: 900px;
+  margin-top: 200px;
+  background-color: #fafafa;
+}
+
+.header {
+  color: black;
+  font-family: "myfont2";
+  position: absolute;
+  top: 1000px;
+  left: 700px;
+  font-size: 110px;
+}
+
+#yellow {
+  color: #fd9626;
+}
+
+/* App and BBQ Set Half Image CSS */
+.halfImagePic {
+  height: 600px;
+  width: 850px;
+}
+
+#halfImagePic2 {
+  height: 600px;
+  width: 650px;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+
+.halfTitle {
+  position: absolute;
+  margin-left: 200px;
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+#halfTitle2 {
+  margin-left: 280px;
+}
+
+.halfImageDiv {
+  margin: 15px;
+}
+
+#halfImageDiv2 {
+  margin: 15px;
+  background-color: #696969;
+  width: 830px;
+  height: 600px;
+  margin-right: 0px;
+  margin-left: 15px;
+  margin-bottom: 19px;
+  margin-top: 14px;
+}
+
+.halfDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center; 
+  overflow: hidden;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 2560px) {
+  /* NavBar */
+  .navbarlist {
+    left: 33%;
+}
+
+#logo {
+    left: 33%;
+}
+
+#bag {
+    left: 33%
+}
+  
+  /* MeatStick Full Image */
+  .description {
+      left: 1130px;
+  }
+}
+
+/* App and BBQ Set Half Image CSS */
+.halfImagePic {
+  height: 600px;
+  width: 850px;
+}
+
+#halfImagePic2 {
+  height: 600px;
+  width: 650px;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+
+.halfTitle {
+  position: absolute;
+  margin-left: 200px;
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+#halfTitle2 {
+  margin-left: 280px;
+}
+
+.halfImageDiv {
+  margin: 15px;
+}
+
+#halfImageDiv2 {
+  margin: 15px;
+  background-color: #696969;
+  width: 830px;
+  height: 600px;
+  margin-right: 0px;
+  margin-left: 15px;
+  margin-bottom: 19px;
+  margin-top: 14px;
+}
+
+.halfDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center; 
+  overflow: hidden;
+  padding: 0px;
+}
+
+/* Product Image CSS */
+#ProbePic {
+  width: 900px;
+  height: 300px;
+}
+
+#BbqSet {
+  width: 600px;
+  height: 600px;
+}
+
+#wifiBridgePic {
+  width: 600px;
+  height: 600px;
+}
+
+/* BBQ Set CSS */
+#bbqH1 {
+  margin-top: 60px;
+}
+
+.BBQSetDiv {
+  margin-top: -50px;
+  margin-bottom: 150px;
+}
+
+#bbqSetInfoRow {
+  text-align: left;
+  margin-bottom: 150px;
+}
+
+#firstlinebbq {
+  margin-top: -20px;
+  margin-left: 0px;
+}
+
+#bbqSetP {
+  margin-left: 0px;
+}
+
+/* MeatStick Product Page CSS */
+#meatStickInfoRow {
+  text-align: left;
+}
+
+#meatstickH1 {
+  margin-bottom: 30px;
+  margin-top: 210px;
+}
+
+.meatstickDescription {
+  padding-bottom: 100px;
+}
+
+.meatstickP {
+  width: 800px;
+  margin-left: 450px;
+}
+
+#overviewTitle {
+  margin-top: 230px;
+  margin-left: -10px;
+}
+
+#specsTitle {
+  margin-top: 80px;
+}
+
+#SKU {
+  color: rgb(170, 170, 170);
+  margin-top: -20px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+.meatstickH3 {
+  color: black;
+  margin-top: 25px;
   font-weight: 600;
 }
 
-.num-dates {
-  float: right;
-  position: relative;
-  top: 110px;
-  right: 50px;
-  z-index: 1;
+#specsUl {
+  margin-bottom: 120px;
 }
 
-.week {
-  margin-bottom: 25px;
-  word-spacing: 58px;
-}
-
-.active-day {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #64b5f6;
-  position: relative;
-  top: 145px;
-  left: 825px;
-}
-
-.white {
-  color: white;
-}
-
-.event-indicator {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #64b5f6;
-  position: relative;
-  top: 304px;
-  left: 695px;
-}
-
-.two {
-  position: relative;
-  top: 168px;
-  left: 535px;
-}
-
-.grey {
-  color: #AAAAB1;
-}
-
-.calendar-left {
-  width: 300px;
-  height: 500px;
-  border-radius: 20px 0px 0px 20px;
-  background-color: #64b5f6;
-  position: relative;
-  z-index: -1;
-  bottom: 500px;
-  color: white;
-}
-
-.hamburger {
-  position: relative;
-  top: 25px;
-  left: 25px;
-}
-
-.burger-line:hover,
-.hamburger:hover {
-  background-color: #64b5f6 !important;
-}
-
-.burger-line {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 15%;
-  margin-bottom: 3px;
-}
-
-.num-date {
-  font-size: 150px;
-  width: 50%;
-  margin: 0 auto;
-  font-weight: 700;
-}
-
-.day {
-  width: 50%;
-  margin: 0px auto;
-  font-size: 30px;
-  position: relative;
-  bottom: 60px;
-}
-
-.current-events {
-  font-size: 15px;
-  position: relative;
-  margin-left: 25px;
-  bottom: 30px;
-}
-
-.posts {
-  text-decoration: underline dotted;
-}
-
-.posts:hover {
-  color: #27e879 !important;
-}
-
-.create-event {
-  font-size: 18px;
-  position: relative;
-  margin-top: 30px;
-  margin-left: 25px;
-}
-
-.event-line {
-  width: 90%;
-}
-
-.add-event {
-  width: 20px;
-  height: 20px;
-  padding: 0px;
-  border-radius: 50%;
-  border: solid white 2px;
-  position: relative;
-  bottom: 42px;
-  left: 260px;
-}
-
-.add {
-  font-size: 25px;
-  position: relative;
-  left: 4px;
-  bottom: 10px;
-}
-
-.add:hover,
-.create-event:hover,
-.add-event:hover {
-  color: #64b5f6 !important;
-  border-color: #64b5f6 !important;
-}
-
-#profilePic {
-  height: 205px;
-  width: 265px;
-  margin-top: 20px;
-  background-color: whitesmoke;
-}
-
-#userRow {
-  margin-top: 90px;
-}
-
-#userName {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-#userDiv {
-  background-color: #64b5f6;
-  color: rgb(252, 238, 229);
-  height: 500px;
-  border-radius: 20px;
-  margin-right: 50px;
-}
-
-.bg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: scroll;
-  height: 110%;
-  background-position: center;
-  opacity: .8;
-}
-
-#goals {
+ul.meatStickUl {
   margin-left: 30px;
-  margin-top: 0px;
+  padding-left: 5px;
 }
 
-/* Landing Page */
-
-#landingTitle {
-  font-family: 'Amatic SC', cursive;
-  font-size: 100px;
-  font-weight: bolder;
-  background-color: white;
-  width: 534px;
-  padding-left: 48px;
-  padding-right: 10px;
+.meatstickLi {
+  left: 0px;
+  margin-bottom: 5px;
 }
 
-#resultsDiv {
-  height: auto;
-  margin-top: 180px;
-  left: 900px;
-  position: absolute;
-  top: 12%;
-  margin-bottom: 100px;
-  background-color: white;
- 
+/* Privacy Policy Page CSS */
+.rowDiv {
+  display: none;
 }
 
-#clientName {
-  font-family:'Amatic SC', cursive;
+.privacyDiv {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: left;
 }
 
-.inputInfo{
-  background-color: white;
-  padding: 10px;
+.privacyPolicyH2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#privacyPolicyH1 {
+  text-align: center;
+}
+
+.indent {
+  text-indent: 20px;
+}
+
+ul.privacyPolicyUl {
+  margin-left: 80px;
+  list-style-type: disc;
+  display: list-item;
+}
+
+/* Wifi Bridge CSS */
+#wifiBridgeTitle {
+  margin-top: -180px;
+  margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 1690px) {
+  /* NavBar */
+  .navbarlist {
+      left: 24%;
+  }
+
+  #logo {
+      left: 25%;
+  }
+
+  #bag {
+      left: 25%
+  }
+
+    /* MeatStick Full Image */
+    .description {
+      left: 700px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+    /* NavBar */
+  .navbarlist {
+      left: 25%;
+  }
+
+  #logo {
+      left: 25%;
+  }
+
+  #bag {
+      left: 25%
+  }
+
+  .navText {
+      margin-left: 35px;
+      margin-right: 25px;
+  }
+
+  /* Footer */
+  #footerDiv {
+    height: 270px;
+  }
+
+  #privacyPolicyTxt {
+    display: inline-block;
+  }
+
+  #copyrightLine {
+    margin-right: 97px;
+  }
+
+  /* MeatStick Full Image */
+    .description {
+      left: 0px;
+    }
+
+  /* Support Page CSS */
+  #contactH1 {
+    margin-left: 660px;
+}
+
+#contactP {
+    margin-left: 610px;
+    margin-bottom: 40px;
+}
+
+.Support {
+    margin-bottom: 40px;
+}
+
+.contact{
+   text-align: center
+}
+
+/* Terms Page CSS */
+.termsDiv {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: left;
+}
+
+#termsLastItem {
+  margin-top: 15px;
+}
 
 }
 
-#userBtn {
-  background-color: rgb(244, 244, 107);
-  margin-top: 20px;
-  margin-bottom: 40px;
+@media only screen and (max-width: 1024px) {
+    /* NavBar */
+  .navbarlist {
+      left: 19%;
+  }
+
+  #logo {
+      left: 17%;
+  }
+
+  #bag {
+      left: 21%
+  }
+
+  .navText {
+      margin-left: 25px;
+      margin-right: 15px;
+  }
+
+      /* MeatStick Full Image */
+      .description {
+        left: 370px;
+    }
 }
 
-.landingForm {
-  background-color: white;
-  width: 550px;
-  height: auto;
-  position: absolute;
-  padding-bottom: 25px;
-  margin-bottom: 245px;
-}
+@media only screen and (max-width: 375px) {
+    /* NavBar */
+  #logo {
+      left: 5%;
+  }
 
-#recipeDiv {
-  padding: 70px;
-  padding-top: 20px;
-  background-color: white;
-}
+  #bag {
+      left: 52%
+  }
 
-#reciepesPic {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
+  #hamburger {
+      left: 75%;
+  }
 
-.recipeText {
-  font-weight: bold;
-}
+    /* Footer */
+    #footerDiv {
+      width: 375px;
+      overflow-x: hidden;
+  }
 
-#recipeName {
-  font-weight: bold;
-  font-size: 15px;
-}
+  #disclaimerDiv {
+      width: 375px;
+      padding-right: 0px;
+  }
 
-#recipeCardName {
-  font-weight: bold;
-  font-size: 15px;
-  margin-left: 10;
-  padding-top: 10px;
-}
+  #phonesTxt {
+      margin-left: 20px;
+      width: 180px;
+  }
+  
+  #copyRightDiv {
+      margin-top: 0px;
+      padding-left: 20px;
+      width: 375px;
+      margin-right: 0px;
+      padding-right: 0px;
+  }
+  
+  #copyrightLine {
+      width: 400px;
+      margin-right: 30px;
+  }
 
-#caloriesNumber {
-  font-weight: bold;
-  font-size: 15px;
+  #copyRightRow {
+      width: 375px;
+  }
+  
+  .policyList {
+      margin-right: 10px;
+      padding-right: 10px;
+      margin-bottom: 0px;
+  }
+
+  #privacyPolicyTxt {
+      display: inline-block;
+      margin-top: 10px;
+  }
+  
+  .list {
+      text-align: left;
+      padding-left: 20px;
+      width: 180px;
+      margin-right: 0px;
+      padding-right: 0px;
+  }
+
+  .listItem {
+      width: 100px;
+  }
+  
+  #moreCol {
+      margin-left: 0px;
+      display: inline-block;
+      margin-top: -147px;
+      margin-left: 165px;
+  }
+
+  #footerTitles1 {
+      width: 130px;
+  }
+
+  #footerTitles2 {
+      width: 180px;
+  }
+
+  #footerUl {
+      width: 180px;
+  }
+
+  #footerList1 {
+      width: 180px;
+      margin-right: 0px;
+      padding-right: 0px;
+  }
+
+  #listRow {
+      margin-bottom: 10px;
+  }
+
+  .footerRow {
+      width: 375px;
+  }
+
+      /* MeatStick Full Image */
+      .fullImageDiv {
+        height: 500px;
+    }
+    .fullImagePic {
+        height: 140px;
+        width: 400px;
+        margin-top: 25px;
+    }
+    
+    .description {
+        top: 215px;
+        left: 100px;
+        font-size: 20px;
+    }
+    
+    #title {
+        width: 360px;
+        height: 100px;
+        top: 160px;
+    }
+  
+  /* Wifi Bridge Full Image CSS */
+  .fullImagePic2 {
+    height: 550px;
+    width: 550px;
+    margin-top: 110px;
+    margin-left: 50px;
+  }
+
+  .header {
+      top: 620px;
+      left: 61px;
+      font-size: 60px;
+  }
+
+  #fullImageDiv2 {
+      margin-bottom: 15px;
+      overflow-x: hidden;
+  }
+
+  /* App and BBQ Set Half Image CSS */
+    #halfImagePic1 {
+      height: 380px;
+      width: 375px;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+
+  #halfImagePic2 {
+      height: 470px;
+      width: 395px;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-bottom: 25px;
+  }
+
+  .halfTitle {
+      font-size: 45px;
+  }
+
+  #halfTitle1 {
+      margin-left: 45px;
+      margin-top: 24px;
+  }
+
+  #halfTitle2 {
+      margin-left: 100px;
+      margin-top: 15px;
+  }
+
+  .halfImageDiv {
+      margin: 0px;
+      width: 375px;
+  }
+
+  .halfImageDiv1 {
+      margin: 0px;
+      width: 375px;
+  }
+
+  #halfImageDiv2 {
+      margin: 10px;
+      width: 375px;
+      height: 400px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      margin-top: 10px;
+  }
+
+  .halfDiv {
+      width: 375px;
+  }
+
+  #halfDiv1 {
+      width: 375px;
+  }
+
+  #halfDivRow {
+      width: 375px;
+      margin-right: 0px;
+      margin-left: 0px;
+  }
+
+  /* Privacy Policy */
+  .privacyDiv {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  /* Terms */    
+    .termsDiv {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 }
